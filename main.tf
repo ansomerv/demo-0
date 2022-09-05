@@ -1,14 +1,13 @@
 # Configure the AWS provider
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
 
-# Create an EC2 instance
-resource "aws_instance" "example" {
-  ami           = "ami-785db401"
+resource "aws_instance" "app_server" {
+  ami           = "ami-830c94e3"
   instance_type = "t2.micro"
 
-  #  tags {
-  #    Name = "terraform-example"
-  #  }
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
 }
