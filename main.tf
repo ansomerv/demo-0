@@ -19,7 +19,7 @@ resource "aws_instance" "app_server" {
 
   tags = {
 
-    Name = "myDemoInstance"
+    Name = "Spet7Instance"
 
   }
 }
